@@ -1,0 +1,27 @@
+''' student score calculator of the 5 subject '''
+print("welcome to the student score ")
+print("enter the student name")
+n=input()
+print("enter the student subject marks as given below ")
+print("enter the english marks")
+eng=int(input())
+print("enter the maths marks")
+maths=int(input())
+print("enter the science marks ")
+sci=int(input())
+print("enter the computer marks")
+com=int(input())
+print("enter the social science marks")
+ss=int(input())
+total=eng+maths+sci+com+ss;
+per=total/500*100
+marks_needed= 450-total
+print("name is:",n)
+print("english marks is:",eng)
+print("maths marks is:",maths)
+print("science marks is:",sci)
+print("computer science marks is:",com)
+print("social science marks is:",ss)
+print("total marks is:",total)
+print("percentage is:",per,"%")
+print("marks needed for 90% is:",marks_needed)
