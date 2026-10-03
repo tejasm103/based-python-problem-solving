@@ -1,0 +1,32 @@
+print("welcome to the student profile")
+marks=[]
+print("enter the name of the student")
+n=input()
+print("enter the age")
+age=int(input())
+collage_name=input("enter the collage name\n")
+course_name=input("enter the course name\n")
+subjects1=input("enter the subjects1\n")
+marks.append(int(input("enter the marks of subject1\n")))
+subjects2=input("enter the subjects2\n")
+marks.append(int(input("enter the marks of subject2\n")))
+subjects3=input("enter the subjects3\n")
+marks.append(int(input("enter the marks of subject3\n")))
+details=(n,age,course_name)
+subjects={subjects1,subjects2,subjects3}
+total_marks=sum(marks)
+percentage=(total_marks/300)*100
+print("=========student profile=========")
+print("the student details are",details)
+print("the student name is",details[0])
+print("the student age is",details[1])
+print("the student course name is",details[2])
+print("the student collage name is",collage_name)
+print("the student subjects are",subjects)
+print("the student marks are",marks)
+print("the student total marks are",total_marks)
+print("the student percentage is",percentage)
+print("=========introduction=========")
+print("""the student name is""",details[0],"and he is",details[1],"years old and he is studying in"
+,details[2],"course in",collage_name,"collage and he has studied the subjects",subjects,
+"and he has scored the marks",marks,"and his total marks are",total_marks,"and his percentage is""",percentage)
